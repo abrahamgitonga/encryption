@@ -6,6 +6,7 @@ const app = express();
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use("/user", router)
+//port 4040 is the alternative port
 
 const port = process.env.PORT || 4040;
 
